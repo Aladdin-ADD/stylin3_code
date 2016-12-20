@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{margin:0;padding: 0;}
+    header{
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        overflow: hidden;
+        width: 500px;
+        margin: 30px;
+        border-radius: 6px;
+        background-color: #ddd;
+    }
+
+    form.stylin_form_search1{
+        float: right;
+        width: 200px;
+        margin: 5px;padding: 5px;
+    }
+    form.stylin_form_search1 input{
+        float: right;
+        width: 70px;
+        padding: 2px 0 3px 5px;
+        outline: none;
+        font-size: 0.8em; border-color: #eee #ccc #ccc #eee;
+        border-radius: 10px;
+        transition: 2s width;
+    }
+
+    form.stylin_form_search1 input::focus{width: 200px;}
+    form.stylin_form_search1 label{display: none;}
+    
+    figure{
+        width: 144px;
+        height: 153px;
+        margin: 20px 20px;
+        border: 1px solid #666;
+        position: relative;
+        float: left;
+    }
+    img{display: block;}
+
+    figcaption{
+        display: none;
+        position: absolute;
+        left: 74%;top:14px;
+        width: 130px;
+        padding: 10px;
+        background: #f2eaea;
+        border: 3px solid red;
+        border-radius: 6px;
+    }
+    figure:hover figcaption{display: block;z-index: 2;}
+
+    figcaption h3{
+        font-style: 14px;
+        color: #666;
+        margin-bottom: 6px;
+    }
+    figcaption a{
+        display: block;
+        text-decoration: none;
+        font-style: 12px;
+        color: #000;
+    }
+    figcaption::after{
+        content: "";
+        position: absolute;
+        border: 12px solid;
+        border-color: transparent red transparent transparent;
+        right: 100%;top:17px;
+        height: 0px;width: 0px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <form action="#" method="post" class="stylin_form_search1">
+            <label for="search">search</label>
+            <input type="search" id="search" name="search" placeholder="search"/>
+        </form>
+    </header>
+</body>
+<figure>
+    <img src="images/pink_heels.jpg" alt="pink heels"/>
+    <figcaption>
+        <h3>pink platforms</h3>
+        <a href="#">more info.</a>
+    </figcaption>
+</figure>
+<figure class="click_me">
+    <img src="images/leopard_heels.jpg" alt="leopard heels"/>
+    <figcaption>
+        <h3>leopard platforms</h3>
+        <a href="#">more info.</a>
+    </figcaption>
+</figure>
+<figure class="click_me">
+    <img src="images/red_heels.jpg" alt="red heels"/>
+    <figcaption>
+        <h3>red platforms</h3>
+        <a href="#">more info.</a>
+    </figcaption>
+</figure>
+</html>
