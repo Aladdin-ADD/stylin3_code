@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            font-family: helvetica,arial,sans-serif;
+            background: #efefef;
+            margin: 0;
+        }
+        #wrapper{
+            width: 980px;
+            margin: 0 auto 20px;
+        }
+        header{
+            position: relative;
+            height: 70px;
+            margin: 10px 0;
+            background: #fff;
+            border-radius: 20px 0 20px 0;
+            box-shadow: 0 12px 8px -9px #555;
+            padding: 1px;
+        }
+        header section#title{
+            position: absolute;
+            width: 300px;
+            height: 65px;
+            left: 0;
+            top: 0;
+        }
+        header h1{
+            padding: 9px 12px 0;
+            font-family: Lato, helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 2.2em;
+            line-height: 1;
+            letter-spacing: -.025em;
+            color: #4eb8ea;
+        }
+        header h2{
+            font-family: "Source Sans Pro", helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: .9em;
+            color: #333;
+            padding: 0px 12px;
+            line-height: 1;
+            letter-spacing: -.025em;
+        }
+        form.search{
+            position: absolute;
+            width: 150px;
+            top: 23px;right: 20px;
+        }
+        .search input{
+            float: right;width: 70px;
+            padding: 2px 0 3px 5px;
+            border-radius: 10px 0 10px 0;
+            font-family: "Source Sans Pro", helvetica, sans-serif;
+            font-weight: 400;font-size: 1em;
+            color:#888;
+            outline:none;
+            transition: 2s width;
+        }
+        .search input::foucus{width: 140px;}
+        .search label{display: none;}
+        form.search input{background-color: #fff;}
+        form.search input::-webkit-input-placeholder{color:#ccc;}
+
+        nav.menu{
+            margin: 19px auto;
+            padding: 0;
+            text-align: center;
+            font-size: 0.8em;
+        }
+        nav.menu ul{display: inline-block;}
+        nav.menu li {float: left; list-style-type: none; position: relative;}
+        nav.menu li a{
+            display: block;
+            padding: 0.25em 0.8em;
+            font-family: "Source Sans Pro", helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            text-align: left;
+            color: #fff;
+            text-decoration: none;
+            -webkit-font-smoothing:antialiased;
+        }
+        nav.menu li.choice1 a{background: #f58c21;}
+        nav.menu li.choice2 a{background: #4eb8ea;}
+        nav.menu li.choice3 a{background: #d6e636;}
+        nav.menu li.choice4 a{background: #ee4c98;}
+        nav.menu li.choice5 a{background: #f58c21;}
+        nav.menu li:hover>a{color:#555; border-color:#fff;border:0;}
+        nav.menu li:last-child a{border-bottom-right-radius: 10px;}
+        nav.menu li:first-child a{border-top-left-radius: 10px;}        
+        nav.menu li ul{
+            opacity: 0;visibility: none;
+            position: absolute;
+            width: 12em;
+            left: 0;
+            top: 100%;
+            transition: 1s all;
+        }
+        nav.menu li:hover > ul{opacity: 1;visibility: visible;}
+        nav.menu li li{float: none;}
+        nav.menu li li:first-child a{border-radius: 0;}
+        nav.menu li li:last-child a{border-bottom-right-radius: 10px;}
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <section id="title">
+                <h1>stylin&#8217;with css</h1>
+                <h2>the blog and books of Charles Wyke-Smith</h2>
+            </section>
+            <nav class="menu">
+                <ul>
+                    <li class="choice1"><a href="#">articles</a></li>
+                    <li class="choice2"><a href="#">books</a></li>
+                    <li class="choice3"><a href="#">resources</a></li>
+                    <li class="choice4"><a href="#">bookshelf</a></li>
+                    <li class="choice5"><a href="#">contact me</a></li>
+                </ul>
+            </nav>
+            <form class="search">
+                <label for="user_name">search</label>
+                <input type="text" id="user_name" name="user_name" value="" placeholder="search">
+            </form>
+        </header>
+        <section id="feature_area">
+            <article id="blog_leadoff">
+            </article>
+            <aside>
+                <form action=""></form>
+                <nav></nav>
+            </aside>
+        </section>
+        <section id="promo_area">
+            <article>
+                <div class="inner"></div>
+            </article>
+            <article>
+                <div class="inner"></div>
+            </article>
+            <article>
+                <div class="inner"></div>
+            </article>
+            <article>
+                <div class="inner"></div>
+            </article>
+        </section>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>
